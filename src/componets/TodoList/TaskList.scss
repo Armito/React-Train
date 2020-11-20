@@ -1,0 +1,14 @@
+.todolist-tasklist {
+  
+  &-item {
+
+    &-content {
+      user-select: none;
+
+      &.completed {
+        text-decoration: line-through;
+        opacity: 0.3;
+      }
+    }
+  }
+}
