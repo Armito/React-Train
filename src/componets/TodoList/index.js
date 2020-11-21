@@ -7,7 +7,7 @@ import { createRandomId } from '../../assets/js/utils'
 export default function TodoList(props) {
   const { owner } = props
   const [taskList, setTaskList] = useState([])
-  const [valueChecked, sertValueChecked] = useState(0)
+  const [valueChecked, setValueChecked] = useState(0)
   const addTask = (_newTask) => {
     setTaskList([
       ...taskList,
@@ -20,7 +20,7 @@ export default function TodoList(props) {
     ])
   }
   const filterTask = (_val) => {
-    sertValueChecked(Number(_val))
+    setValueChecked(Number(_val))
   }
   const toggleTask = (_id) => {
     setTaskList(taskList.map((task) => {
